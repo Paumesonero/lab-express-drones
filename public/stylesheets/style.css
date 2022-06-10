@@ -3,20 +3,259 @@ body {
   margin: 0;
   box-sizing: border-box;
   font: 16px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background-image: url('/images/drone.jpeg');
+  background-size: cover;
 }
 
-/* list.hbs styles */
+/* index style */
+.index-container {
 
-.list-container {
+  height: 825px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-container h1 {
+  font-size: 3rem;
+  color: #d3e2e3;
+}
+
+.index-container p {
+  font-size: 1.3rem;
+  color: #d3e2e3;
+}
+
+#title-color {
+  color: #26c2c7;
+  font-size: 3rem;
+}
+
+
+.index-elements {
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+}
+
+.index-elements a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 20px 50px;
+  color: #d3e2e3;
+  transition: 0.5s;
+  letter-spacing: 0.1em;
+}
+
+.index-elements a:hover {
+  letter-spacing: 0.3em;
+  box-shadow: 0 0 35px #26c2c7;
+}
+
+/* list.hbs styles */
+
+.top-part-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+}
+
+.list-container {
+  height: 825px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-container h2 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #d3e2e3;
 }
 
 .list-grid {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 100px;
+  gap: 50px;
+  width: 90%;
+  margin-left: 400px;
+}
+
+.drone-container {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.drone-container a {
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  border: 2px solid #d3e2e3;
+  color: #d3e2e3;
+  padding: 4px 28px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.drone-container a:hover {
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px #19a30a;
+  cursor: pointer;
+}
+
+
+.drone-container p {
+  color: #d3e2e3;
+}
+
+.drone-container button {
+  padding: 5px 20px;
+  background-color: transparent;
+  color: #d3e2e3;
+  border: 2px solid #d3e2e3;
+  transition: 0.5s;
+  letter-spacing: 0.1rem;
+}
+
+.drone-container button:hover {
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px #b80425;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 600;
+  color: #26c2c7;
+}
+
+#new-drone-btn {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 2px solid #d3e2e3;
+  padding: 20px 50px;
+  color: #d3e2e3;
+  transition: 0.5s;
+  letter-spacing: 0.1em;
+}
+
+#new-drone-btn:hover {
+  letter-spacing: 0.3em;
+  box-shadow: 0 0 35px #26c2c7;
+}
+
+/*update-form style */
+
+.form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+#form-btn {
+  width: 50%;
+  margin-left: 250px;
+  height: 40px;
+  color: #d3e2e3;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  border: 2px solid #d3e2e3;
+}
+
+#form-btn:hover {
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  box-shadow: 0 0 35px #26c2c7;
+}
+
+.form-layout {
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  color: #d3e2e3;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h2 {
+  color: #d3e2e3;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label-input-container input {
+  height: 30px;
+  color: #b80425;
+  font-weight: 600;
+  border-color: #26c2c7;
+  background-color: #d3e2e3;
+}
+
+
+nav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+
+nav a {
+  margin-left: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #d3e2e3;
+  border: 2px solid #d3e2e3;
+  transition: 0.5s;
+  letter-spacing: 0.1rem;
+  padding: 5px 20px;
+}
+
+nav a:hover {
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  box-shadow: 0 0 35px #26c2c7;
+}
+
+/* create styles */
+#add-btn {
+  width: 50%;
+  margin-left: 250px;
+  height: 40px;
+  color: #d3e2e3;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  border: 2px solid #d3e2e3;
+}
+
+#add-btn:hover {
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  box-shadow: 0 0 35px #26c2c7;
 }

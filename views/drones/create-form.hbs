@@ -1,15 +1,23 @@
 <nav>
     <a href="/drones">Drones</a>
 </nav>
-<h2>Add a new drone</h2>
-<form method="POST" action="/drones/create">
-    <label for="name">Name</label>
-    <input type="text" name="name" placeholder="Enter Drone's name">
-
-    <label for="propellers">Propellers</label>
-    <input type="text" name="propellers" placeholder="Number of propellers">
-
-    <label for="maxSpeed">Max. speed</label>
-    <input type="text" name="maxSpeed" placeholder="Maximum Speed">
-    <button type="submit">Add</button>
-</form>
+<div class="form-container">
+    <h2>Add a new drone</h2>
+    <form method="POST" action="/drones/create" class="form">
+        <div class="form-layout">
+            <div class="label-input-container">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Drone's name">
+            </div>
+            <div class="label-input-container">
+                <label for="propellers">Propellers</label>
+                <input type="text" name="propellers" placeholder="Number of propellers">
+            </div>
+            <div class="label-input-container">
+                <label for="maxSpeed">Max. speed</label>
+                <input type="text" name="maxSpeed" placeholder="Maximum Speed">
+            </div>
+        </div>
+        <button type="submit" id="add-btn">Add</button>
+    </form>
+</div>
